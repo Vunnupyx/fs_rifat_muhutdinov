@@ -34,6 +34,14 @@ h2, h3, h4 {
     background-color: #000;
 }
 
+.header__logo-link {
+    display: inline-block;
+}
+
+.header__logo {
+    margin: 14px 28px 14px 0;
+}
+
 .container {
     max-width: 1116px;
     margin: 0 auto;
@@ -218,35 +226,41 @@ h2, h3, h4 {
     margin-right: 0;
 }
 
-.features__feature1{
+.features__feature1 {
     padding: 146px 0 116px;
     background: #f5f5f5;
     overflow: auto;
 }
+
 .features__feature2 {
     padding: 105px 0 134px;
     background: #fff;
     overflow: auto;
 }
+
 .features__feature3 {
     padding: 76px 0 126px;
     background: #f5f5f5;
     overflow: auto;
 }
+
 .about {
     padding: 104px 0 102px;
     background: #fff;
     overflow: auto;
 }
+
 .pricing {
     padding: 104px 0 96px;
     background: #f5f5f5;
     overflow: auto;
 }
+
 .reviews {
     padding: 104px 0 100px;
     overflow: auto;
 }
+
 .contact {
     padding: 104px 0 82px;
     overflow: auto;
