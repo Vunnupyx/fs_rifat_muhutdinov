@@ -8,6 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <title>Axit</title>
+    <!--<script src="../js/0/swapOfNumbers.js"></script>-->
+    <!--<script src="../js/1/helloWorld.js"></script>-->
+    <!--<script src="../js/2/prompt.js"></script>-->
+    <!--<script src="../js/3/workingWithArrays.js"></script>-->
+    <!--<script src="../js/4/FizzBuzz.js"></script>-->
+    <!--<script src="../js/5/palindrome.js"></script>-->
+    <script src="../js/6/guessDigit.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -107,19 +114,30 @@
                             <li class="tabs__item"><a class="tabs__link" href="#">TAB3</a></li>
                         </ul>
                         <div class="tabs__info">
-                            <div class="subtitle">Tabs with soft transitioning effect.</div>
+                            <div class="subtitle">Угадай число</div>
                             <p class="desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-                                penatibus et magnis dis parturient montes.
+                                Логическая игра "Угадай число" - это математическая игра для развития логического
+                                мышления.
+                                Способствует развитию логики и разностороннего мышления.
                             </p>
                             <p class="desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                bibendum laoreet.
+                                Правила игры: компьютер загадывает число от 1 до 1000 (цифры могут повторяться). Ваша
+                                задача угадать это число.
                             </p>
-                            <div class="tabs__button">
-                                <button>Download</button>
+                            <p class="desc">
+                                Если введенное число меньше, чем задуманное, выводится
+                                диалоговое окно с надписью "Искомое число больше!".
+                            </p>
+                            <p class="desc">
+                                Если введенное число больше, чем задуманное, выводится диалоговое окно с надписью
+                                "Искомое число меньше!".
+                            </p>
+                            <p class="desc">
+                                Если введено не число или вообще ничего не введено, запрашивается повторный ввод с надписью
+                                "Введите число!".
+                            </p>
+                            <div onclick="startGame()" class="tabs__button">
+                                <button>Начать игру</button>
                             </div>
                         </div>
                         <div class="tabs__image-wrapper">
