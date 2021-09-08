@@ -1,7 +1,5 @@
-/*todo: форматни код*/
-(function (){
+(function () {
     let array = [];
-
     for (let i = 1; i <= 100; i++) {
         array.push(i);
 

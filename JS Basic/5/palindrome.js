@@ -1,10 +1,9 @@
-/*todo: форматни код*/
-(function (){
+(function () {
     let inputText = prompt("Проверка слова на палиндром. Введите слово:");
     let reverseText = inputText.split('').reverse().join('');
-    if (inputText === reverseText){
+    if (inputText === reverseText) {
         alert(`"${inputText}" палиндром!`);
-    }else {
+    } else {
         alert(`"${inputText}" не палиндром!`)
     }
 })();

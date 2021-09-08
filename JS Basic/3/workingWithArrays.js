@@ -1,7 +1,3 @@
-// 1.
-/*todo: удали ненужные коменты*/
-/*todo: форматни код*/
-
 let array = [];
 
 function getRandomInt(min, max) {
@@ -43,8 +39,5 @@ function sortArrayByOrder(array, sortOrder) {
 
 sortArrayByOrder(array, "asc")
 console.log(array)
-
-// 2.
-
 let result = array.filter(i => i % 1 === 0 && i % 2 !== 0).map(i => x += i * i, x = 0).reverse()[0]
 console.log(result)
