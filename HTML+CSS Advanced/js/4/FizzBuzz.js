@@ -1,3 +1,4 @@
+/*todo: форматни код*/
 (function (){
     let array = [];
 

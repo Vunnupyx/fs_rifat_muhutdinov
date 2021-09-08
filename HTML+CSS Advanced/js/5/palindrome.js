@@ -1,3 +1,4 @@
+/*todo: форматни код*/
 (function (){
     let inputText = prompt("Проверка слова на палиндром. Введите слово:");
     let reverseText = inputText.split('').reverse().join('');

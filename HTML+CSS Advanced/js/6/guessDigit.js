@@ -17,7 +17,7 @@ function startGame() {
         }
 
         count++;
-
+        /*todo: строгое сравнение онли*/
         if (inputNumber == number) {
             resume = confirm(`Вы угадали! Количество попыток: ${count}. Начать заново?`)
             number = getRandomInt(1, 1000);
