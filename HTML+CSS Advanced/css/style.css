@@ -625,19 +625,29 @@ h2, h3, h4 {
 }
 
 
+.contact__field::placeholder {color: #bdbdbd;}
+.contact__field::-webkit-input-placeholder {color: #bdbdbd;}
+.contact__field::-ms-input-placeholder {color: #bdbdbd;}
+.contact__field:-moz-placeholder {color: #bdbdbd;opacity: 1;}
+.contact__field::-moz-placeholder {color: #bdbdbd;opacity: 1;}
+.contact__field:-ms-input-placeholder {color: #bdbdbd;}
+
 .contact__field {
     display: block;
     width: 90%;
-    margin: 32px auto 2px;
+    margin: 34px auto 2px;
     padding: 9px;
     border: none;
     font-size: 0.875rem;
-    color: #bdbdbd;
+    color: #000;
     -webkit-box-shadow: 0 1px 0 0 rgb(0 0 0 / 16%);
     box-shadow: 0 1px 0 0 rgb(0 0 0 / 16%);
     resize: none;
-}
 
+}
+.contact__field._error{
+    box-shadow: 0 0 15px red;
+}
 .contact__btn {
     font-family: "Open Sans", sans-serif;
     font-size: 0.9375rem;

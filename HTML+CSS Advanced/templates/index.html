@@ -380,7 +380,7 @@
         </section>
         <section class="contact">
             <div class="container">
-                <div class="contact__content">
+                <form action="#" id="form-contact" class="contact__content">
                     <div class="contact__header">
                         <div class="table__title">CONTACT US</div>
                         <hr align="center" class="hr-line">
@@ -388,19 +388,20 @@
                     </div>
                     <div class="contact__list">
                         <div class="contact__item">
-                            <input class="contact__field" type="text" name="name" placeholder="Name">
-                            <input class="contact__field" type="text" name="email" placeholder="Email">
-                            <input class="contact__field" type="text" name="subject" placeholder="Subject">
+                            <input id="contactFName" class="contact__field _name" type="text" name="name" placeholder="First name *">
+                            <input id="contactSName" class="contact__field _name" type="text" name="name" placeholder="Second name *">
+                            <input id="contactEmail" class="contact__field _email" type="text" name="email" placeholder="Email *">
+                            <input id="contactPhone" class="contact__field _mobile" type="text" name="phone" placeholder="Mobile *">
                         </div>
                         <div class="contact__item">
-                            <textarea class="contact__field" name="message" cols="10" rows="9"
-                                      placeholder="Message"></textarea>
+                            <textarea id="contactMessage" class="contact__field _message" name="message" cols="10" rows="13"
+                                      placeholder="Message *"></textarea>
                         </div>
                         <div class="contact__item">
-                            <input class="contact__btn" type="submit" value="Send Message">
+                            <button class="contact__btn" type="submit" value="Send Message">Send Message</button>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
     </main>
@@ -422,5 +423,7 @@
         </div>
     </footer>
 </div>
+<script src="../js/app.js"></script>
+<script src="../js/localStorage.js"></script>
 </body>
 </html>
