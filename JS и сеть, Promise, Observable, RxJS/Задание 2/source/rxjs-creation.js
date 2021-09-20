@@ -1,6 +1,5 @@
-import {interval, from, Observable, fromEvent, range, merge} from 'rxjs';
-import {filter, map, take, scan} from 'rxjs/operators';
-import {log} from "webpack-dev-server/client/utils/log";
+import {fromEvent, merge, Observable, range} from 'rxjs';
+import {filter, scan} from 'rxjs/operators';
 
 const line = document.querySelector('.line')
 

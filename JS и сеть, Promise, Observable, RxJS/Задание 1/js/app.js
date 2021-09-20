@@ -4,7 +4,6 @@ class Weather {
         this.city = city;
     }
 
-    // Fetch Weather From API
     async getWeather() {
         return new Promise((resolve, reject) => {
             const xhr = new XMLHttpRequest()
@@ -24,8 +23,6 @@ class Weather {
         })
 
     }
-
-    //`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=577b3bd2eec54e5a84a1ae825e746783&lang=ru`
 
     async getWeatherForecast() {
         return new Promise((resolve, reject) => {
