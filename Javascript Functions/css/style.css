@@ -38,7 +38,13 @@ body {
     align-items: flex-end;
     justify-content: end;
     font-size: 52px;
+    width: 270px;
+    -ms-user-select: all;
+    -moz-user-select: all;
+    -khtml-user-select: all;
+    -webkit-user-select: all;
 }
+
 
 .calc-buttons-row {
     display: block;
@@ -58,7 +64,7 @@ body {
 }
 
 .calc-button {
-    margin-left: 5px;
+    margin-left: 8px;
 }
 
 .calc-button:first-child {
