@@ -7,3 +7,4 @@
 | 5 | 14.09.2021    | Javascript Functions / Javascript OOP | Сalculator. OOP         | https://gitlab.com/nc-samara-frontend-school/2021/development/fs_rifat_muhutdinov/-/merge_requests/5 |
 | 6 | 15.09.2021    | Javascript and Browser| Javascript and Browser                  | https://gitlab.com/nc-samara-frontend-school/2021/development/fs_rifat_muhutdinov/-/merge_requests/6 |
 | 7 | 17.09.2021    | Javascript and DOM | Javascript and DOM                         | https://gitlab.com/nc-samara-frontend-school/2021/development/fs_rifat_muhutdinov/-/merge_requests/7 | 
+| 8 | 20.09.2021    | JS и сеть, Promise, Observable, RxJS | Weather, RXJS            | https://gitlab.com/nc-samara-frontend-school/2021/development/fs_rifat_muhutdinov/-/merge_requests/9 | 
