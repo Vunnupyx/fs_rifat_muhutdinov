@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "removeComments": true,
+    "outDir": "js",
+    "experimentalDecorators": true,
+    "outFile": "main.js"
+  }
+}
