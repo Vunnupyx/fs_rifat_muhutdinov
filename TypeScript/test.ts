@@ -20,6 +20,7 @@ class User implements IPerson {
     }
 
     set email(email: string) {
+        //eslint-disable-next-line
         const pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (pattern.test(String(email).toLowerCase()))
             this._email = email;
@@ -233,7 +234,7 @@ class Product {
             console.log('Не корректный: description');
     }
 
-    isNumber(num: any) {
+    isNumber(num: number | string) {
         return typeof num === 'number' && !isNaN(num);
     }
 }
@@ -247,15 +248,16 @@ class SomeClass {
 }
 
 const obj = create(SomeClass);
+console.log(obj.constructor.name)
 
-
+//eslint-disable-next-line
 function decorate(constructor: Function) {
     console.log(`Object ${constructor.name} created!`);
 }
 
 console.log('')
 
-let user = new User('Николай',
+const user = new User('Николай',
     'Печкин',
     'Nik@pechkin.com',
     'passlow1W');
@@ -271,11 +273,11 @@ user.password = 'passlow';
 console.log(`логин: ${user.email} пароль ${user.password}`)
 console.log('')
 
-let product = new Product("Колбаса", 450, '');
-let secondProduct = new Product("Сыр", 400, 'Тут должно быть описание');
+const product = new Product("Колбаса", 450, '');
+const secondProduct = new Product("Сыр", 400, 'Тут должно быть описание');
 console.log('')
 
-let orderCart = new OrderCart(product);
+const orderCart = new OrderCart(product);
 console.log(orderCart.product);
 orderCart.addProduct(secondProduct);
 console.log(orderCart.product);
@@ -287,8 +289,8 @@ orderCart.removeProduct(1);
 console.log(orderCart.product);
 console.log(orderCart.totalCost());
 console.log('');
-let date = new Date('2014-11-13');
-let orderTrue = new Orders(user, date, 'Выполнен', orderCart)
+const date = new Date('2014-11-13');
+const orderTrue = new Orders(user, date, 'Выполнен', orderCart)
 console.log(orderTrue);
 console.log('');
 

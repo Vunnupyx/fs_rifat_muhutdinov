@@ -199,11 +199,12 @@ SomeClass = __decorate([
     decorate
 ], SomeClass);
 const obj = create(SomeClass);
+console.log(obj.constructor.name);
 function decorate(constructor) {
     console.log(`Object ${constructor.name} created!`);
 }
 console.log('');
-let user = new User('Николай', 'Печкин', 'Nik@pechkin.com', 'passlow1W');
+const user = new User('Николай', 'Печкин', 'Nik@pechkin.com', 'passlow1W');
 user.firstName = 'Коля';
 user.lastName = 'Печка';
 console.log(user.firstName);
@@ -214,10 +215,10 @@ user.email = 'emaillow';
 user.password = 'passlow';
 console.log(`логин: ${user.email} пароль ${user.password}`);
 console.log('');
-let product = new Product("Колбаса", 450, '');
-let secondProduct = new Product("Сыр", 400, 'Тут должно быть описание');
+const product = new Product("Колбаса", 450, '');
+const secondProduct = new Product("Сыр", 400, 'Тут должно быть описание');
 console.log('');
-let orderCart = new OrderCart(product);
+const orderCart = new OrderCart(product);
 console.log(orderCart.product);
 orderCart.addProduct(secondProduct);
 console.log(orderCart.product);
@@ -229,7 +230,7 @@ orderCart.removeProduct(1);
 console.log(orderCart.product);
 console.log(orderCart.totalCost());
 console.log('');
-let date = new Date('2014-11-13');
-let orderTrue = new Orders(user, date, 'Выполнен', orderCart);
+const date = new Date('2014-11-13');
+const orderTrue = new Orders(user, date, 'Выполнен', orderCart);
 console.log(orderTrue);
 console.log('');
