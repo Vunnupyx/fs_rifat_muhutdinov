@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400&display=swap');
+
+.animals{
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.container {
+  max-width: 1244px;
+  margin: auto;
+  padding: 0 3%;
+}
+
+.animals__header {
+  display: block;
+  font-family: Arsenal, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000;
+  border-radius: 6px;
+  margin: 20px 0 40px;
+  padding: 0;
+}
+
+.animals-search__input {
+  border: 1px solid #ccc;
+  background: #f5f9fa;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px 17px;
+  font-size: 18px;
+  color: #494a4c;
+  outline: none;
+}
+
+.animals-search__input:focus {
+  border: 1px solid #D9435D;
+}
+
+.animals-cats--hide {
+  cursor: pointer;
+  color: #1d1d1d;
+  border: 1px solid #D9435D;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 12px 30px;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.animals-cats--hide:hover {
+  background: #fc6783;
+  color: #fff;
+}
+
+.animals__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 38px 37px 0;
+}
+
+.animals__item {
+  width: 190px;
+  margin: 0 44px 53px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.animals__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.animals__name {
+  font-family: Arsenal, sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 29px;
+  color: #494a4c;
+  text-align: center;
+  padding: 8px 0 2px;
+}
+
+.animals__type {
+  font-family: Arsenal, sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.animals__details {
+  font-family: Arsenal, sans-serif;
+  color: #494a4c;
+  text-align: center;
+  font-weight: 400;
+  padding: 8px 0 2px;
+}
