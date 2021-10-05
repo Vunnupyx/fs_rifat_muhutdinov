@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400&display=swap');
 
-.animals{
+.animals {
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
 }
+
 .container {
   max-width: 1244px;
   margin: auto;

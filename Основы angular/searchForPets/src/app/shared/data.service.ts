@@ -7,10 +7,7 @@ export class Animal {
 
 @Injectable()
 export class DataService {
-  constructor() {
-  }
-
-  private animals: Animal[] = [
+  private _animals: Animal[] = [
     {
       breed: 'Котик',
       name: 'Бабасик',
@@ -114,7 +111,10 @@ export class DataService {
 
   ]
 
+  constructor() {
+  }
+
   getAnimals(): Animal[] {
-    return this.animals;
+    return this._animals;
   }
 }
