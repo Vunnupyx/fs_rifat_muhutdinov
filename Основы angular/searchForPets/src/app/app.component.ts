@@ -17,7 +17,7 @@ export class AppComponent {
     this._animals = this._dataService.getAnimals();
   }
 
-  public hideCats(): void {
+  public _hideCats(): void {
     if (this._hideItem) {
       this._animals = this._animals.filter((animal: Animal) => {
         return animal.breed !== 'Котик';

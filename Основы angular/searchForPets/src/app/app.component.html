@@ -4,7 +4,7 @@
     <input [(ngModel)]="_searchText" autocomplete="off" class="animals-search__input" id="search-text"
            placeholder="Поиск" size="40"
            type="text" value="">
-    <div (click)="_hideItem = !_hideItem; hideCats()" class="animals-cats--hide">{{_hideItem ? 'Показать котиков' :
+    <div (click)="_hideItem = !_hideItem; _hideCats()" class="animals-cats--hide">{{_hideItem ? 'Показать котиков' :
       'Скрыть котиков'}}</div>
     <div class="animals__list">
       <div (click)="_expandedElement = i" *ngFor="let animal of this._animals | appFilter: _searchText; let i = index"
