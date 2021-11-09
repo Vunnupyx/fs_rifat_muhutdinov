@@ -1,0 +1,114 @@
+{
+  "animals": [
+    {
+      "id": 0,
+      "type": "Котик",
+      "name": "Бабасик",
+      "breed": "Абиссинская кошка",
+      "gender": "М",
+      "age": 3,
+      "weight": 3,
+      "furLength": "Короткошерстная",
+      "img": "assets/images/cat.png"
+    },
+    {
+      "id": 1,
+      "type": "Котик",
+      "name": "Барки",
+      "breed": "Абиссинская кошка",
+      "gender": "М",
+      "age": 4,
+      "weight": 4,
+      "furLength": "Короткошерстная",
+      "img": "assets/images/cat.png"
+    },
+    {
+      "id": 2,
+      "type": "Котик",
+      "name": "Барна",
+      "breed": "Абиссинская кошка",
+      "gender": "Ж",
+      "age": 5,
+      "weight": 5,
+      "furLength": "Короткошерстная",
+      "img": "assets/images/cat.png"
+    },
+    {
+      "id": 3,
+      "type": "Котик",
+      "name": "Барон",
+      "breed": "Абиссинская кошка",
+      "gender": "М",
+      "age": 2,
+      "weight": 3,
+      "furLength": "Короткошерстная",
+      "img": "assets/images/cat.png"
+    },
+    {
+      "id": 4,
+      "type": "Собачка",
+      "name": "Персик",
+      "breed": "Австралийская овчарка",
+      "gender": "М",
+      "age": 1,
+      "weight": 9,
+      "furLength": "Длинношерстная",
+      "img": "assets/images/dog.png"
+    },
+    {
+      "id": 5,
+      "type": "Собачка",
+      "name": "Пуф",
+      "breed": "Австралийский келпи",
+      "gender": "М",
+      "age": 2,
+      "weight": 14,
+      "furLength": "Короткошерстная",
+      "img": "assets/images/dog.png"
+    },
+    {
+      "id": 6,
+      "type": "Собачка",
+      "name": "Патрик",
+      "breed": "Американская акита",
+      "gender": "М",
+      "age": 2,
+      "weight": 23,
+      "furLength": "Короткошерстная",
+      "img": "assets/images/dog.png"
+    },
+    {
+      "id": 7,
+      "type": "Собачка",
+      "name": "Патрик",
+      "breed": "Английский бульдог",
+      "gender": "М",
+      "age": 1,
+      "weight": 8,
+      "furLength": "Короткошерстная",
+      "img": "assets/images/dog.png"
+    },
+    {
+      "id": 8,
+      "type": "Амфибия",
+      "name": "Покер",
+      "breed": "Гребенчатый тритон",
+      "gender": "М",
+      "age": 3,
+      "weight": 0.13,
+      "furLength": "Лысая",
+      "img": "assets/images/amphibian.png"
+    },
+    {
+      "id": 9,
+      "type": "Амфибия",
+      "name": "Пабло",
+      "breed": "Древолаз голубой",
+      "gender": "М",
+      "age": 4,
+      "weight": 0.2,
+      "furLength": "Лысая",
+      "img": "assets/images/amphibian.png"
+    }
+  ]
+}

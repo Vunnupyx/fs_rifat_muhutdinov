@@ -1,0 +1,17 @@
+.switch-theme__btn {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    color: #1d1d1d;
+    border: 1px solid #1d1d1d;
+    background: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin: 14px 14px;
+}
+
+.switch-theme__btn:hover {
+    background: #4e4e4e;
+    color: #fff;
+}
