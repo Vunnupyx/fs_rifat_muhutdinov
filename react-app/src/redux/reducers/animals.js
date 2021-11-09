@@ -73,7 +73,10 @@ const animals = (state = initialState, action) => {
             return {
                 ...state,
                 animals: [...state.animals, [action.data.id, action.data.breed, action.data.name, action.data.type,
+                    action.data.gender, action.data.age, action.data.weight, action.data.furLength, action.data.img]],
+                saveAnimals: [...state.animals, [action.data.id, action.data.breed, action.data.name, action.data.type,
                     action.data.gender, action.data.age, action.data.weight, action.data.furLength, action.data.img]]
+
             };
         case UPDATE_ANIMAL:
             return {
@@ -84,11 +87,18 @@ const animals = (state = initialState, action) => {
                             action.data.gender, action.data.age, action.data.weight, action.data.furLength, action.data.img]
                     } else return animal;
                 }),
+                saveAnimals: state.animals.map(animal => {
+                    if (animal[0] === action.data.id) {
+                        return [action.data.id, action.data.breed, action.data.name, action.data.type,
+                            action.data.gender, action.data.age, action.data.weight, action.data.furLength, action.data.img]
+                    } else return animal;
+                })
             }
         case REMOVE_ANIMAL:
             return {
                 ...state,
-                animals: state.animals.filter((animal) => animal[0] !== action.id)
+                animals: state.animals.filter((animal) => animal[0] !== action.id),
+                saveAnimals: state.animals.filter((animal) => animal[0] !== action.id)
             }
         default:
             return state;
