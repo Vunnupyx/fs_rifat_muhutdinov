@@ -1,0 +1,87 @@
+<div class="animal-form">
+  <div class="animal-form__wrap">
+    <div class="animal-form__panel">
+      <div (click)="_closeForm()" class="animal-form__close">×</div>
+      <div class="animal-form__title">Добавить животного</div>
+      <form #templateForm="ngForm" (ngSubmit)="_onSubmit(templateForm)" class="form">
+        <div class="form__group">
+          <label for="type">Тип животного *</label>
+          <input #type="ngModel" [(ngModel)]="_animal.type"
+                 [ngClass]="{'is-invalid': type.invalid && type.touched, 'is-valid': type.dirty && type.valid}"
+                 class="form__control"
+                 id="type"
+                 maxlength="15"
+                 minlength="3" name="type"
+                 pattern="^[A-Za-zА-Яа-яЁё]+$"
+                 required type="text">
+        </div>
+        <div class="form__group">
+          <label for="name">Имя *</label>
+          <input #name="ngModel" [(ngModel)]="_animal.name"
+                 [ngClass]="{'is-invalid': name.invalid && name.touched, 'is-valid': name.dirty && name.valid}"
+                 class="form__control"
+                 id="name"
+                 maxlength="15"
+                 minlength="3"
+                 name="name"
+                 pattern="^[A-Za-zА-Яа-яЁё]+$"
+                 required
+                 type="text">
+        </div>
+
+        <div class="form__group">
+          <label for="breed">Порода *</label>
+          <input #breed="ngModel" [(ngModel)]="_animal.breed"
+                 [ngClass]="{'is-invalid': breed.invalid && breed.touched, 'is-valid': breed.dirty && breed.valid}"
+                 class="form__control"
+                 id="breed"
+                 maxlength="15"
+                 minlength="3"
+                 name="breed" pattern="^[A-Za-zА-Яа-яЁё]+$"
+                 required
+                 type="text">
+        </div>
+
+        <div class="form__group">
+          <label for="gender">Пол *</label>
+          <select #gender="ngModel" [(ngModel)]="_animal.gender"
+                  [ngClass]="{'is-invalid' : gender.pristine && gender.touched, 'is-valid': gender.dirty && gender.valid}"
+                  class="form__control" id="gender"
+                  name="gender"
+                  required>
+            <option value="М">М</option>
+            <option value="Ж">Ж</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="age">Возраст</label>
+          <input #age="ngModel" [(ngModel)]="_animal.age"
+                 [ngClass]="{'is-invalid': age.invalid && age.touched, 'is-valid': age.dirty && age.valid}"
+                 class="form__control"
+                 id="age"
+                 name="age" pattern="[0-9]{1,2}" type="text">
+        </div>
+        <div class="form__group">
+          <label for="weight">Вес (г.)</label>
+          <input [(ngModel)]="_animal.weight" class="form__control" id="weight"
+                 name="weight" pattern="^[0-9]+$" type="text">
+        </div>
+        <div class="form__group">
+          <label for="furLength">Шерсть</label>
+          <input [(ngModel)]="_animal.furLength" class="form__control" id="furLength"
+                 name="furLength" type="text">
+        </div>
+        <div class="form__group">
+          <label for="img">Изображение</label>
+          <input (change)="_onFileChanged($event)" class="form__control"
+                 id="img" name="img" required type="file">
+        </div>
+        <div class="form__group">
+          <button [disabled]="templateForm.invalid" class="form__btn"
+                  type="submit">Отправить
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+<div class="animal-form">
+  <div class="animal-form__wrap">
+    <div class="animal-form__panel">
+      <div class="animal-form__close" routerLink="">×</div>
+      <div class="animal-form__title">Редактировать животного</div>
+      <form (ngSubmit)="_onSubmit()" [formGroup]="_reactiveForm" class="form">
+        <div class="form__group">
+          <label>Тип животного</label>
+          <input
+            [ngClass]="{'is-invalid': _reactiveForm.controls['type'].invalid && _reactiveForm.controls['type'].touched, 'is-valid': _reactiveForm.controls['type'].dirty && _reactiveForm.controls['type'].valid}"
+            class="form__control" formControlName="type" name="type"/>
+        </div>
+        <div class="form__group">
+          <label>Имя</label>
+          <input
+            [ngClass]="{'is-invalid': _reactiveForm.controls['name'].invalid && _reactiveForm.controls['name'].touched, 'is-valid': _reactiveForm.controls['name'].dirty && _reactiveForm.controls['name'].valid}"
+            class="form__control" formControlName="name" name="name"/>
+        </div>
+        <div class="form__group">
+          <label>Порода</label>
+          <input
+            [ngClass]="{'is-invalid': _reactiveForm.controls['breed'].invalid && _reactiveForm.controls['breed'].touched, 'is-valid': _reactiveForm.controls['breed'].dirty && _reactiveForm.controls['breed'].valid}"
+            class="form__control" formControlName="breed" name="breed"/>
+        </div>
+        <div class="form__group">
+          <label>Пол</label>
+          <select
+            [ngClass]="{'is-invalid' : _reactiveForm.controls['gender'].pristine && _reactiveForm.controls['gender'].touched, 'is-valid': _reactiveForm.controls['gender'].dirty && _reactiveForm.controls['gender'].valid}"
+            class="form__control" formControlName="gender"
+            name="gender">
+            <option value="М">М</option>
+            <option value="Ж">Ж</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label>Возраст</label>
+          <input
+            [ngClass]="{'is-invalid': _reactiveForm.controls['age'].invalid && _reactiveForm.controls['age'].touched, 'is-valid': _reactiveForm.controls['age'].dirty && _reactiveForm.controls['age'].valid}"
+            class="form__control" formControlName="age" name="age"/>
+        </div>
+        <div class="form__group">
+          <label for="weight">Вес (г.)</label>
+          <input class="form__control"
+                 formControlName="weight" id="weight" name="weight"/>
+        </div>
+        <div class="form__group">
+          <label for="furLength">Шерсть</label>
+          <input class="form__control" formControlName="furLength"
+                 id="furLength" name="furLength" type="text">
+        </div>
+        <div class="form__group">
+          <label for="img">Изображение</label>
+          <input (change)="_onFileChanged($event)"
+                 class="form__control" formControlName="img"
+                 id="img" name="img" type="file">
+        </div>
+        <div class="form__group">
+          <button [disabled]="_reactiveForm.invalid" class="form__btn" type="submit">
+            Отправить
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
